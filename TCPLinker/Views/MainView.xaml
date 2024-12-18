@@ -23,56 +23,67 @@
             <RowDefinition Height="*" />
         </Grid.RowDefinitions>
         <Border Grid.Row="0" Background="#79BBFF" />
-        <ListBox
+        <ItemsControl
             Grid.Row="0"
             Margin="60,0,0,0"
             HorizontalAlignment="Left"
-            HorizontalContentAlignment="Left"
-            Background="Transparent"
-            BorderBrush="Transparent"
-            BorderThickness="0"
-            ItemsSource="{Binding MenuItems}"
-            SelectedItem="{Binding SelectedMenuItem}">
-            <ListBox.ItemsPanel>
+            ItemsSource="{Binding MenuItems}">
+
+            <!--  定义面板模板为横向排列  -->
+            <ItemsControl.ItemsPanel>
                 <ItemsPanelTemplate>
                     <StackPanel Orientation="Horizontal" />
                 </ItemsPanelTemplate>
-            </ListBox.ItemsPanel>
-            <ListBox.ItemTemplate>
+            </ItemsControl.ItemsPanel>
+
+            <!--  自定义菜单按钮的样式  -->
+            <ItemsControl.ItemTemplate>
                 <DataTemplate>
                     <Button
+                        Margin="0,0,10,0"
                         Background="Transparent"
                         BorderBrush="Transparent"
                         BorderThickness="0"
                         Command="{Binding DataContext.SelectMenuCommand, RelativeSource={RelativeSource AncestorType=Window}}"
                         CommandParameter="{Binding}">
-                        <!--  自定义 Button 的 ControlTemplate  -->
+
+                        <!--  彻底去除默认鼠标移入样式  -->
                         <Button.Template>
-                            <ControlTemplate>
+                            <ControlTemplate TargetType="Button">
                                 <Border
                                     Height="30"
                                     Padding="5"
-                                    Background="white"
+                                    Background="White"
                                     CornerRadius="5">
                                     <StackPanel
                                         HorizontalAlignment="Center"
                                         VerticalAlignment="Center"
                                         Orientation="Horizontal">
 
+                                        <!--  图标  -->
                                         <TextBlock
+                                            x:Name="IconText"
                                             Margin="0,0,5,0"
                                             FontFamily="{StaticResource Icons}"
                                             FontSize="18"
                                             Text="{Binding IconName, Converter={StaticResource HtmlEntityToUnicodeConverter}}" />
-                                        <TextBlock FontSize="14" Text="{Binding Name}" />
+
+                                        <!--  文本  -->
+                                        <TextBlock
+                                            x:Name="NameText"
+                                            FontSize="14"
+                                            Text="{Binding Name}" />
                                     </StackPanel>
                                 </Border>
+
                             </ControlTemplate>
                         </Button.Template>
                     </Button>
                 </DataTemplate>
-            </ListBox.ItemTemplate>
-        </ListBox>
+            </ItemsControl.ItemTemplate>
+        </ItemsControl>
+
+
         <ContentControl Grid.Row="1" prism:RegionManager.RegionName="MainRegion" />
 
     </Grid>

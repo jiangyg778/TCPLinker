@@ -88,3 +88,4 @@ D:\workSpace\TCPLinker\TCPLinker\TCPLinker\obj\Debug\net8.0-windows\refint\TCPLi
 D:\workSpace\TCPLinker\TCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.pdb
 D:\workSpace\TCPLinker\TCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.genruntimeconfig.cache
 D:\workSpace\TCPLinker\TCPLinker\TCPLinker\obj\Debug\net8.0-windows\ref\TCPLinker.dll
+D:\workSpace\TCPLinker\TCPLinker\TCPLinker\obj\Debug\net8.0-windows\TCPLinker.sourcelink.json
