@@ -53,7 +53,7 @@ namespace TCPLinker.Views.Pages {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/TCPLinker;component/views/pages/helpcenter.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/TCPLinker;V1.0.0.0;component/views/pages/helpcenter.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\..\..\Views\Pages\HelpCenter.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

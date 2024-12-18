@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TCPLinker")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+803c7177b73f31f8415885741591367384970836")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1e22f03da336c7dc50f860ca4c6241715a0fe7a8")]
 [assembly: System.Reflection.AssemblyProductAttribute("TCPLinker")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TCPLinker")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
