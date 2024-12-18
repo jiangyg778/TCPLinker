@@ -9,6 +9,7 @@
             <ResourceDictionary.MergedDictionaries>
                 <ResourceDictionary>
                     <FontFamily x:Key="Icons">/TCPLinker;component/Resourecs/Fonts/iconfont.ttf#iconfont</FontFamily>
+
                 </ResourceDictionary>
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
